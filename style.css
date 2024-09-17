@@ -84,19 +84,23 @@ img {
 .hero .container {
     background: img src="multiethnic-group-young-happy-students-standing-outdoors_171337-11812.avif" no-repeat;
     background-size: contain;
-    background-position: center bottom;
+    background-position: center-bottom;
     height: 550px;
     padding-top: 20px;
+    
 }
 
 .hero .hero-content {
     width: 70%;
+    
 }
 
 .hero .hero-text {
     width: 70%;
     margin-bottom: 20px;
+    
 }
+
 
 /* video */
 

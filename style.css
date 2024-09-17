@@ -82,23 +82,31 @@ img {
 }
 
 .hero .container {
-    background: img src="multiethnic-group-young-happy-students-standing-outdoors_171337-11812.avif" no-repeat;
-    background-size: contain;
-    background-position: center-bottom;
-    height: 550px;
-    padding-top: 20px;
-    
+    display: flex;
+    align-items: center;
 }
 
-.hero .hero-content {
-    width: 70%;
-    
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('multiethnic-group-young-happy-students-standing-outdoors_171337-11812.avif'); /* Ändra till sökvägen till din bild */
+    background-size: cover; /* Täck hela containern */
+    background-position: center; /* Centrera bilden */
+    background-repeat: no-repeat; /* Förhindra upprepning av bilden */
+    height: 550px;
 }
+
 
 .hero .hero-text {
     width: 70%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
+}
+
+.hero-text {
+    color: white;
 }
 
 
@@ -516,23 +524,33 @@ text-align: center;
     .footer .card {
         margin-right: 0;
     }
-
-    .text-xl {
-        font-size: 1.9rem;
-    }
-
-    .text-lg {
-        font-size: 1.5rem;
-
-    }
-
-    .text-md {
-        font-size: 1.2rem;
-
-    }
-
 }
 
 @media (max-width: 500px) {
     
+}
+
+ /* Text*/
+
+ .text-xxl {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.text-xl {
+    font-size: 1.9rem;
+}
+
+.text-lg {
+    font-size: 1.5rem;
+
+}
+
+.text-md {
+    font-size: 1.2rem;
+
+}
+
+.text-center {
+    text-ali: center;
 }

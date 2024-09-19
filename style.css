@@ -92,9 +92,9 @@ img {
     align-items: center;
     justify-content: center;
     background-image: url('multiethnic-group-young-happy-students-standing-outdoors_171337-11812.avif'); /* Ändra till sökvägen till din bild */
-    background-size: cover; /* Täck hela containern */
-    background-position: center; /* Centrera bilden */
-    background-repeat: no-repeat; /* Förhindra upprepning av bilden */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     height: 550px;
 }
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-CHANGE</title>
+    <title>Growth app</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
@@ -91,7 +91,7 @@
             </h2>
             <div class="video-content">
                 <a href="#">
-                    <img src="video-preview.png" alt="video" class="video-preview" />
+                    <img src="Karta Exchange.png" alt="video" class="video-preview" />
                 </a>
 
                 <a href="#" class="btn btn-primary">Get Started</a>
@@ -133,31 +133,31 @@
         </div>
     </section>
 
-    <!--Stipendier-->
-    <section class="stipendier">
+    <!--Pricing-->
+    <section class="pricing">
         <div class="container-sm">
-            <h3 class="stipendier-heading text-xl text-center">
+            <h3 class="pricing-heading text-xl text-center">
                 Stipendier
             </h3>
-            <p class="stipendier-subheading text-md text-center">
+            <p class="pricing-subheading text-md text-center">
                 Maximera dina möjligheter, upptäck stipendier som tar dig vidare i världen.
             </p>
-            <div class="stipendier-grid">
-                <!--stipendier Card 1-->
+            <div class="pricing-grid">
+                <!--Pricing Card 1-->
                 <div class="card bg-light">
-                    <div class="stipendier-card-header">
-                        <h4 class="stipendier-heading text-xl">
+                    <div class="pricing-card-header">
+                        <h4 class="pricing-heading text-xl">
                             ERASMUS Stipendium
                         </h4>
-                        <p class="stipendier-card-subheading">
+                        <p class="pricing-card-subheading">
                             Ger ekonomiskt stöd till studenter som vill studera eller praktisera utomlands i Europa. Det hjälper till att täcka delar av kostnader för resa, boende och vardagsutgifter.
                         </p>
-                        <p class="stipendier-card-grant">
+                        <p class="pricing-card-price">
                             <span class="text-xl">500€</span>
                             *per månad. bidraget kan variera.
                         </p>
                     </div>
-                    <div class="stipendier-card-body">
+                    <div class="pricing-card-body">
                         <ul>
                             <li>
                                 <i class="fas fa-check"></i>Utbytesprogram inom Europa
@@ -175,19 +175,19 @@
                         <a href="#" class="btn btn-primary btn-block">Ansök här</a>
                     </div>
                 </div>
-                <!--stipendier card 2-->
+                <!--Pricing card 2-->
                 <div class="card bg-black">
-                    <div class="stipendier-card-header">
-                        <h4 class="stipendier-card-heading text-xl">X-CHANGE Stipendium 
+                    <div class="pricing-card-header">
+                        <h4 class="pricing-card-heading text-xl">X-CHANGE Stipendium 
                         </h4>
-                        <p class="stipendier-card-subheading">
+                        <p class="pricing-card-subheading">
                             Vårt globala stipendium belönar akademiskt framstående studenter med ekonomiskt stöd för studier utomlands. Det är öppet för elever världen över och syftar till att stödja exceptionella prestationer och framtida framgångar.    
                         </p>
-                        <p class="stipendier-card-grant">
+                        <p class="pricing-card-price">
                             <span class="text-xl">1000€</span> per månad.
                         </p>
                     </div>
-                    <div class="stipendier-card-body">
+                    <div class="pricing-card-body">
                         
                         <ul>
                             <li>
@@ -205,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <p class="stipendier-footer text-center">
+            <p class="pricing-footer text-center">
               Stipendiet betalas ut i euro men omvandlas till svenska kronor (SEK) vid utbetalning.
             </p>
         </div>
@@ -323,16 +323,15 @@
                 <p class="text-sm">
                     Fyll i kontaktuppgifter och önskemål nedan.
                 </p>
-               <form id="applicationForm"> 
+               <form id="applicationForm" novalidate> 
                 <input type="text" id="name" placeholder="För- och efternamn" required>
-                <input type="tel" id="number" placeholder="Telefonnummer"required>
+                <input type="tel" id="number" placeholder="Telefonnummer" pattern="[0-9]{10}"required>
                 <input type="email" id="email" placeholder="Epost" required>
                 <input type="text" id="wish" placeholder="Önskemål"required>
                 <input type="text" id="message" placeholder="Meddelande till oss" required>
                 <button type="submit" class= "btn btn-primary btn-block">Ansök nu</button>
                 </form>
-
-                <div id="errorMessages"></div>
+        
 
             </div>
             <i class="fab fa-linkedin"></i>

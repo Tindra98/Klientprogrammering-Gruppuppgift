@@ -44,14 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.toggle('active')
     );
   });
+  
+// validering 
 
-  function validateForm() {
-    let x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
-    }
-  }
+ // document.addEventListener('DOMContentLoaded', function() {
+   // const form = document.getElementById('applicationForm');
+    
+    //form.addEventListener('submit', function(event) {
+        // Hämta telefonnummer och mönstret för att kontrollera det
+      //  const phoneInput = document.getElementById('number');
+       // const phonePattern = /^[0-9]{10}$/;
+
+        // Kontrollera om telefonnumret är giltigt
+        //if (!phonePattern.test(phoneInput.value)) {
+          //  alert('Ange ett giltigt telefonnummer med 10 siffror.');
+            //event.preventDefault();  // Stoppa formuläret från att skickas om fel
+       // }
+  //  });
+// }); 
 
 
 

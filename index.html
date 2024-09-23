@@ -323,14 +323,15 @@
                 <p class="text-sm">
                     Fyll i kontaktuppgifter och önskemål nedan.
                 </p>
-                <form> 
-                <input type="email" id="name" placeholder="För- och efternamn">
-                <input type="email" id="number" placeholder="Telefonnummer">
-                <input type="email" id="email" placeholder="Epost">
-                <input type="email" id="wish" placeholder="Önskemål">
-                <input type="email" id="message" placeholder="Meddelande till oss">
-                <button type="email" class= "btn btn-primary btn-block">Ansök nu</button>
+               <form id="applicationForm" novalidate> 
+                <input type="text" id="name" placeholder="För- och efternamn" required>
+                <input type="tel" id="number" placeholder="Telefonnummer" pattern="[0-9]{10}"required>
+                <input type="email" id="email" placeholder="Epost" required>
+                <input type="text" id="wish" placeholder="Önskemål"required>
+                <input type="text" id="message" placeholder="Meddelande till oss" required>
+                <button type="submit" class= "btn btn-primary btn-block">Ansök nu</button>
                 </form>
+        
 
             </div>
             <i class="fab fa-linkedin"></i>

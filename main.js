@@ -44,15 +44,84 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.toggle('active')
     );
   });
+  
+// validering 
 
-  function validateForm() {
-    let x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
+const nameInput = document.getElementById('name');
+const numberInput = document.getElementById('number');
+const emailInput = document.getElementById('email');
+const form = document.getElementById('applicationForm');
+
+// Lägg till event listeners för att validera när användaren skriver i fältet
+nameInput.addEventListener('input', validateName);
+numberInput.addEventListener('input', validateNumber);
+emailInput.addEventListener('input', validateEmail);
+
+// Funktion för att validera namn
+function validateName() {
+    if (nameInput.value.trim() === "") {
+        showError(nameInput, "Namn krävs");
+    } else {
+        clearError(nameInput);
     }
-  }
+}
 
+// Funktion för att validera telefonnummer
+function validateNumber() {
+    const numberValue = numberInput.value.trim();
+    if (numberValue.length < 10) {
+        showError(numberInput, "Telefonnumret är för kort (måste vara exakt 10 siffror)");
+    } else if (numberValue.length > 10) {
+        showError(numberInput, "Telefonnumret är för långt (måste vara exakt 10 siffror)");
+    } else if (!/^\d+$/.test(numberValue)) { // Kontrollera att det bara innehåller siffror
+        showError(numberInput, "Ange endast siffror (inga bokstäver eller andra tecken)");
+    } else {
+        clearError(numberInput);
+    }
+}
 
+// Funktion för att validera e-post
+function validateEmail() {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!pattern.test(emailInput.value)) {
+        showError(emailInput, "Ange en giltig e-postadress");
+    } else {
+        clearError(emailInput);
+    }
+}
+
+// Visar felmeddelande och lägger till röd ram
+function showError(input, message) {
+    clearError(input); // Rensa gammalt felmeddelande om det finns
+
+    // Skapa ett nytt <small>-element för felmeddelandet
+    const errorText = document.createElement('small');
+    errorText.classList.add('error-text');
+    errorText.style.color = 'red'; // Gör felmeddelandet rött
+    errorText.innerText = message;
+
+    input.classList.add('is-invalid'); // Lägg till röd ram
+    input.parentElement.appendChild(errorText); // Lägg till felmeddelandet direkt under fältet
+}
+
+// Rensar felmeddelande och tar bort röd ram
+function clearError(input) {
+    input.classList.remove('is-invalid'); // Ta bort röd ram
+    const existingError = input.parentElement.querySelector('.error-text');
+    if (existingError) {
+        existingError.remove(); // Ta bort felmeddelande
+    }
+}
+
+// Förhindra formulärsubmission om det finns fel
+form.addEventListener('submit', function(event) {
+    validateName();
+    validateNumber();
+    validateEmail();
+    
+    if (form.querySelector('.is-invalid')) {
+        event.preventDefault(); // Förhindra submission om något fält är ogiltigt
+    }
+});
 
 

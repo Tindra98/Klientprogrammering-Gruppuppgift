@@ -148,6 +148,11 @@ img {
     font-weight: bold;
 }
 
+.testimonials .card a {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
 /* Stipendier */
 .stipendier-grid {
     display: grid;

@@ -448,7 +448,7 @@ text-align: center;
 
 .hamburger-button {
     
-    display: none;
+    display: block;
     background: none;
     border: none;
     cursor: pointer;
@@ -510,6 +510,7 @@ text-align: center;
         margin: 20px 30px 30px 0;
         margin-right: 50px;
       }
+    
 
    
 }

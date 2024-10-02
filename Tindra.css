@@ -84,7 +84,8 @@
   margin-top: 50px;
   margin-left: 15px;
  }
-  .projects h2 {
+  .projects-content h3 {
+    font-size: 4.5rem;
     font-weight: 600;
   }
 

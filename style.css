@@ -91,11 +91,12 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('multiethnic-group-young-happy-students-standing-outdoors_171337-11812.avif'); /* Ändra till sökvägen till din bild */
+    background-image: url('multiethnic-group-young-happy-students-standing-outdoors_171337-11812.avif'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     height: 550px;
+    
 }
 
 
@@ -557,9 +558,6 @@ text-align: center;
 
 }
 
-@media (max-width: 500px) {
-    
 
-}
 
  

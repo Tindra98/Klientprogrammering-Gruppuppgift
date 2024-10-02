@@ -1,0 +1,35 @@
+{ "projects": [
+    {
+        "Projektnamn": "Effektivisering av ansökningsprocessen med digitala verktyg",
+        "Beskrivning": "För att förbättra hanteringen av studentansökningar och minska handläggningstiderna införde jag ett digitalt system som automatiserade ansökningsprocessen. Genom detta system kunde vi spåra varje ansökan i realtid, skicka automatiska påminnelser till studenter om saknade dokument och säkerställa att varje ansökan behandlades snabbare. Detta ledde till en 30% minskning av handläggningstiden och en betydande förbättring av kommunikationen med studenterna, vilket gjorde hela processen mycket smidigare för både oss och dem.",
+        "Kund": "X-CHANGE"
+
+    },
+    {
+        "Projektnamn": "Bygga starka relationer med internationella universitet",
+        "Beskrivning": "Ett av mina mest givande projekt har varit att bygga och underhålla nära relationer med våra partneruniversitet och programleverantörer runt om i världen. Genom att regelbundet kommunicera och hålla kontakt med dessa institutioner har jag säkerställt att vi alltid har tillgång till uppdaterad information om tillgängliga platser, akademiska krav och deadlines. Detta arbete har inte bara förbättrat vårt samarbete med universiteten, utan också gett våra studenter fler valmöjligheter och en bättre förståelse för vad varje program erbjuder",
+        "Kund": "Universitet med avtal med X-CHANGE"
+
+    },
+    {  
+        "Projektnamn": "Skapandet av en interaktiv plattform för tillgängliga utbytesplatser",
+        "Beskrivning": "Jag utvecklade en interaktiv plattform där studenterna enkelt kan se vilka utbytesplatser som finns tillgängliga, filtrera dem baserat på sina intressen och akademiska mål, samt få detaljerad information om varje programs specifika krav. Detta projekt har gjort det möjligt för studenter att själva utforska sina möjligheter på ett strukturerat sätt, vilket minskade behovet av manuella förfrågningar och ökade studenternas självständighet i deras beslutsprocess.",
+        "Kund": "X-CHANGE"
+    },
+    {
+        "Projektnamn": "Koordination av multi-nationella utbytesprogram",
+        "Beskrivning": "Ett av de mest komplexa projekten jag har hanterat involverade att koordinera utbytesprogram mellan flera universitet i olika länder. Detta krävde att jag synkroniserade akademiska kalendrar, säkerställde att alla parter förstod och följde överenskomna avtal, och såg till att studenter fick korrekt information om viktiga datum och förväntningar. Trots de logistiska utmaningarna ledde detta projekt till ett framgångsrikt samarbete mellan universitet från tre olika kontinenter, vilket skapade fler spännande utbytesmöjligheter för våra studenter.",
+        "Kund": "X-CHANGE och avtalspartners"
+    },
+    {
+        "Projektnamn": "Studentstöd från ansökan till avresa",
+        "Beskrivning": "Mitt fokus har alltid varit att ge våra studenter bästa möjliga stöd under hela utbytesprocessen, från ansökan till avresa. Jag utvecklade en omfattande guide och ett stödsystem där studenterna kan få hjälp med allt från att fylla i ansökningsformulär till att förbereda sig inför sin avresa. Genom personlig vägledning och regelbundna informationsmöten såg jag till att studenterna kände sig trygga och väl förberedda inför sitt äventyr utomlands. Detta ledde till en betydande ökning av antalet studenter som fullföljde sina ansökningar och tog steget ut i världen.",
+        "Kund": "Studenter"
+    }
+
+
+
+
+    
+]
+}

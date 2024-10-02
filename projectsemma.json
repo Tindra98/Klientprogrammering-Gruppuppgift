@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Global marknadsförings kampanj för att locka internationella studenter",
+        "client": "Ef sverige",
+        "description": "Ett av mina största och mest spännande projekt var att leda en global marknadsföringskampanj riktad mot internationella studenter. Jag skapade en kampanj som kombinerade inspirerande videor, engagerande sociala medier-inlägg och målinriktad digital annonsering. Kampanjen nådde över 50 000 potentiella studenter över hela världen och genererade en 30% ökning av ansökningar till våra utbytesprogram. Det var otroligt givande att se hur vår kampanj inspirerade unga människor att ta steget och studera utomlands.",
+        "year":"2023"
+       
+    },
+    {
+        "title": "Sociala medier-strategi för att bygga en engagerad student gemenskap",
+        "client": "Content Örebro",
+        "description": "Jag utvecklade en omfattande sociala medier-strategi som inte bara fokuserade på att marknadsföra våra utbytesprogram, utan även på att bygga en stark och engagerad studentgemenskap. Genom att skapa inspirerande innehåll, dela studentberättelser och anordna interaktiva evenemang, som live-frågestunder och virtuella rundvandringar, lyckades vi öka våra följare med 50% på bara sex månader. Denna strategi ledde också till en markant ökning av studentengagemang och frågor om våra program",
+        "year":"2020"
+       
+    },
+    {
+        "title": "Bianca Ingrosso samarbete för att nå en bredare målgrupp",
+        "client": "Bianca AB",
+        "description": "Jag initierade och ledde flera samarbeten med influencers bland annat Bianca Ingrosso samt tidigare utbytesstudenter som ambassadörer för våra program. Genom att arbeta med personer som har stor räckvidd och trovärdighet bland vår målgrupp kunde vi sprida vårt budskap på ett autentiskt och effektivt sätt. Ett sådant samarbete resulterade i att en av våra videokampanjer blev viral och nådde över 100 000 visningar inom de första två veckorna, vilket ökade vår synlighet och attraherade fler studenter till vår hemsida",
+        "year":"2017"
+    },
+    {
+        "title": "E-post kampanjer för att nå specifika studenter",
+        "client":"Oru",
+        "description": "För att effektivt nå ut till potentiella studenter utvecklade jag en serie riktade e-postkampanjer som levererade relevant information baserat på var studenter befann sig i sin beslutsprocess. Genom att segmentera vår e-postlista kunde vi skicka personliga meddelanden och innehåll som svarade på studenternas specifika behov och frågor. Detta resulterade i en öppningsfrekvens på över 40% och en konverteringsgrad på 15%, vilket visade hur viktig skräddarsydd kommunikation är i marknadsföringen av våra utbytesprogram",
+        "year":"2015"
+    },
+
+    {
+       "title": "SEO och content-strategi för att driva trafik till hemsidan",
+       "client": "Follows 4 u",
+       "description": "För att öka vår synlighet online och locka fler studenter till vår hemsida skapade jag en SEO- och content-strategi. Genom att skriva blogginlägg, skapa informationssidor om olika utbytesprogram och optimera innehållet för sökmotorer, ökade vi vår organiska trafik med 25% på ett år. Dessutom byggde vi upp ett bibliotek av resurser som gav studenterna allt de behövde veta om att ansöka till våra program och vad de kunde förvänta sig av sin tid utomlands",
+       "year":"2013"
+    }
+]
+   
+   

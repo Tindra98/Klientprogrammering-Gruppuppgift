@@ -1,0 +1,320 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px; /* Justera beroende på höjd på din navbar */
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 2.3;
+    font-weight: 300;
+    margin: 50px 0 30px;
+    color: rgb(247, 113, 195);
+}
+
+.grid-item h2 {
+    font-size:xx-large;
+    font-weight:600;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+/* Hero-sektionen */
+.Hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+.hero-heading {
+    margin-bottom: 0;
+}
+
+/* Text-storlek */
+.text-emma-xxl {
+    font-size: 3.5vw;
+    margin: 60px 0 30px;
+    color: rgb(247, 113, 195);
+}
+
+.text-emma-xl {
+    font-size: 1.5vw;
+    margin-top: 0;
+}
+
+/* Container för två kolumner */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.First {
+    text-align: left;
+}
+
+/* Bildinställningar */
+.picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.video-preview {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Testimonial kort */
+.testimonial-card {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    background-color: #fffefe;
+    max-width: 1000px;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    color: #f281c5;
+    line-height: 1.5;
+    margin: 30px 0;
+}
+
+/* Testimonial grid layout */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Info ruta */
+.Info2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 10vh;
+    text-align: right;
+}
+
+/* Grid layout för projekt */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-client,
+.project-description,
+.project-year {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Bildspel */
+.carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.carousel__item {
+    width: 100%;
+    display: none;
+}
+
+.carousel__item--selected {
+    display: block;
+}
+
+.carousel__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel__button {
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__button--selected {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Inputfält */
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Media queries */
+
+/* Små enheter (mobiler) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .Hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card,
+    .testimonial-text {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .picture img,
+    .carousel__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-preview {
+        max-width: 90%;
+    }
+
+    .Info2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .text-emma-xxl {
+        font-size: 5vw;
+    }
+
+    .text-emma-xl {
+        font-size: 3vw;
+    }
+}
+
+/* Stora enheter (tabletter) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+
+    .testimonial-card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .carousel__item img {
+        width: 80%;
+    }
+}
+
+/* Stora enheter (datorer) */
+@media (min-width: 1025px) {
+    .Hero {
+        height: 100vh;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    .testimonial-card {
+        width: 60%;
+        margin: 40px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

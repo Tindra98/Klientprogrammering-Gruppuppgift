@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-CHANGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="emma.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="main.js" defer></script>
+   
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="x-changelogo.png" alt="X-Change Logo">
+                </a>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="#">Om oss</a></li>
+                    <li><a class="btn" href="#"><i class="fas fa-user"></i> Logga in</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="hamburger-button">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </button>
+
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a class="btn" href="#"><i class="fas fa-user"></i> Logga in</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="Hero">
+        <div class="container">
+            <div class="text-container">
+                <h1 class="hero-heading text-emma-xxl text-center">Emma Olovsson</h1>
+                <h2 class="text-emma-xl text-center">Marknadsföringsansvarig</h2> <!-- Rättade stängande tagg -->
+            </div>
+              <div class="picture">
+                    <img src="CV Fotografering-421.jpg" alt="video" class="video-preview" />
+        </div>
+    </div>
+    </section>
+
+    <section class="testimonials bg-white">
+        <div class="container testimonial-grid">
+                <div class="card testimonial-card">
+                    <p class="testimonial-text"> Jag ansvarar för att strategiskt marknadsföra evenemanget genom att skapa och genomföra kampanjer som
+                        stärker varumärkets närvaro. Jag hanterar sociala medier för att skapa engagemang och interaktion med målgruppen, samtidigt som jag arbetar för att driva trafik till hemsidan genom riktade annonser och innehållsstrategier. Mitt fokus ligger på att nå ut till potentiella studenter och inspirera dem att delta, genom att lyfta fram evenemangets fördelar och skapa en stark och attraktiv närvaro på digitala plattformar.
+                    </p>
+                    <p class="testimonial-text" >Emma Olovsson</p>
+                    <p class="testimonial-text">emma.olovsson@x-change.se</p>
+                    </div>
+        
+               
+<div class="carousel">
+    <div class="carousel__item"><img src="bild2.jpg" alt="bild 2"></div>
+    <div class="carousel__item "><img src="australien.jpg" alt="australien"></div>
+    <div class="carousel__item"><img src="paris.jpg"alt="paris"></div>
+    <div class="carousel__item"><img src="universityLocations.png"alt="universityLocations"></div>
+</div> 
+</section>
+
+<div id="app">
+    <div class="grid-item item4">
+        <h2>Mina projekt</h2>
+        <input type="text" id="filter" placeholder="Filtrera" v-model="filter" >
+    </div>
+    <div class="grid-container">
+        <div v-for="item in filteredProjects" :key="item.title" class="project">
+            <h3 class="project-title">{{item.title}}</h3>
+            <p class="project-client">Kund: {{item.client}}</p>
+            <p class="project-description">Beskrivning: {{item.description}}</p>
+            <p class="project-year">År:{{item.year}}</p>
+        </div>
+    </div>
+</div>
+
+<script src="emma.js" defer></script>
+</body>
+
+</html> 
+

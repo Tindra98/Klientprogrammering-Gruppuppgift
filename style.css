@@ -111,17 +111,17 @@ img {
 }
 
 
-/* video */
+/* region */
 
-.video {
+.region {
     padding: 10px 0 0px;
 }
 
-.video-preview {
+.region-preview {
     margin-bottom: 20px;
 }
 
-.video-content {
+.region-content {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="x-changelogo.png">
+                    <img src="x-changelogo.png" alt="picture">
                 </a>
             </div>
 
@@ -44,14 +45,11 @@
             </div>
         </div>
     
-
-    <!--Hamburger Button-->
-
-    <button class="hamburger-button">
-      <div class="hamburger-line"></div>
-      <div class="hamburger-line"></div>
-      <div class="hamburger-line"></div>
-    </button>
+  <!--Hamburger Button-->
+  <button class="hamburger-button">
+    <i class="fa fa-bars"></i>
+  </button>
+   
 
     <div class="mobile-menu">
         <ul>
@@ -81,7 +79,7 @@
                      Från dröm till destination, vi hjälper dig hela vägen.</p>
                     </div>
             </div>
-        </div>
+        
     </section>
 
     <!--Region Section-->
@@ -91,9 +89,9 @@
             Här är alla platser vi erbjuder runtom i världen. 
         </h2>
         
-        <!-- Cards Container -->
+        <!-- region cards Container -->
         <div class="cards-container">
-            <div class="testimonials-grid">
+            <div class="region-grid">
                 <div class="card">
                     <p>
                         Upptäck Europas rika historia och kultur samtidigt som du studerar i några av världens främsta universitet. Från livliga storstäder som Paris och Berlin till pittoreska byar i Italien och Spanien, finns det något för alla som vill uppleva mångfald och utbildning i toppklass.
@@ -117,20 +115,18 @@
                     </p>
                     <p><b>Nord- och Sydamerika</b></p>
                 </div>
-            <br>
-                
-            </br>
             </div>
         </div>
     </div>
 </section>
 
 <section class="region bg-black">
-    <div class="container-sm">
+    <div class="container">
+
         <!--region Content Container-->
         <div class="region-content">
             <a href="#">
-                <img src="Karta Exchange.png" alt="region" class="region-preview" />
+                <img src="Karta%20Exchange.png" alt="region" class="region-preview">
             </a>
         </div>
     </div>
@@ -362,9 +358,9 @@
                 </p>
                <form id="applicationForm" novalidate> 
                 <input type="text" id="name" placeholder="För- och efternamn" required>
-                <input type="tel" id="number" placeholder="Telefonnummer" pattern="[0-9]{10}"required>
+                <input type="tel" id="number" placeholder="Telefonnummer" pattern="[0-9]{10}" required>
                 <input type="email" id="email" placeholder="Epost" required>
-                <input type="text" id="wish" placeholder="Önskemål"required>
+                <input type="text" id="wish" placeholder="Önskemål" required>
                 <input type="text" id="message" placeholder="Meddelande till oss" required>
                 <button type="submit" class= "btn btn-primary btn-block">Ansök nu</button>
                 </form>

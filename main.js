@@ -66,17 +66,28 @@ function validateName() {
     }
 }
 
-// Funktion för att validera telefonnummer
 function validateNumber() {
     const numberValue = numberInput.value.trim();
-    if (numberValue.length < 10) {
-        showError(numberInput, "Telefonnumret är för kort (måste vara exakt 10 siffror)");
-    } else if (numberValue.length > 10) {
-        showError(numberInput, "Telefonnumret är för långt (måste vara exakt 10 siffror)");
-    } else if (!/^\d+$/.test(numberValue)) { // Kontrollera att det bara innehåller siffror
-        showError(numberInput, "Ange endast siffror (inga bokstäver eller andra tecken)");
-    } else {
+
+    // Kontrollera om numret börjar med +46 och sedan 9 siffror
+    if (/^\+46\d{9}$/.test(numberValue)) {
         clearError(numberInput);
+    }
+    // Kontrollera om numret har exakt 10 siffror (för vanliga svenska nummer)
+    else if (/^\d{10}$/.test(numberValue)) {
+        clearError(numberInput);
+    }
+    // Om numret är för kort
+    else if (numberValue.length < 10) {
+        showError(numberInput, "Telefonnumret är för kort (måste vara 10 siffror eller +46 följt av 9 siffror)");
+    }
+    // Om numret är för långt
+    else if (numberValue.length > 13) { // 13 tecken eftersom +46 tar upp tre tecken och sedan 9 siffror
+        showError(numberInput, "Telefonnumret är för långt (måste vara 10 siffror eller +46 följt av 9 siffror)");
+    }
+    // Om numret innehåller ogiltiga tecken
+    else {
+        showError(numberInput, "Ogiltigt nummer. Ange endast siffror eller +46 följt av 9 siffror.");
     }
 }
 
@@ -111,17 +122,7 @@ function clearError(input) {
     if (existingError) {
         existingError.remove(); // Ta bort felmeddelande
     }
-}
+};
 
-// Förhindra formulärsubmission om det finns fel
-form.addEventListener('submit', function(event) {
-    validateName();
-    validateNumber();
-    validateEmail();
-    
-    if (form.querySelector('.is-invalid')) {
-        event.preventDefault(); // Förhindra submission om något fält är ogiltigt
-    }
-});
 
 

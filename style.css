@@ -227,37 +227,13 @@ img {
 }
 
 .faq .faq-group .faq-group-body {
-    display: none;
+    display: block;
 }
 
 .faq .faq-group .faq-group-body.open {
     display: block;
 }
 
-.faq ul.faq-menu {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #ddd;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-
-}
-
-.faq ul.faq-menu li {
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.faq ul.faq-menu li.active {
-    background: var(--primary-color);
-    color:#fff;
-}
 
 /* Footer*/
 
@@ -470,6 +446,7 @@ text-align: center;
     font-size: 30px; 
     color: black; 
     display: none;
+    
   }
   
   .hamburger-button i:hover {

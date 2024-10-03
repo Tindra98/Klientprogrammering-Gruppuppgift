@@ -104,7 +104,7 @@
 
 .projects > div:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px  rgb(116, 181, 224);
 }
 
 /* Text styling for project title */
@@ -249,7 +249,7 @@
         width:100%;
         margin-top: 15px;
         margin-bottom: 50px;
-        padding-bottom: 180px;
+        padding-bottom: 50px;
         
       }
      

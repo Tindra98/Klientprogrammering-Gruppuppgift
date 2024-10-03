@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-CHANGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hedda.css">
+    <!--js-->
+    <script defer src="main.js"></script>
+    <script defer src= "hedda.js"></script>
+    <script defer src="heddaVue.js"></script>
+    <!--vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://unpkg.com/vue-carousel@0.18.0/dist/vue-carousel.min.js"></script>
+     
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="x-changelogo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Hem</a>
+                    </li>
+                    <li>
+                        <a href="#">Om oss</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#">
+                            <i class="fas fa-user"></i> Logga in
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <!--Responsiv design för mobiltelefoner-->
+        <button class="hamburger-button">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </button>
+
+        <div class="mobile-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Hem</a>
+                </li>
+                <li>
+                    <a href="#">Om oss</a>
+                </li>
+                <li>
+                    <a class="btn" href="#">
+                        <i class="fas fa-user"></i> Logga in
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Profilsektion -->
+<section class="profile-section">
+    <h1>Hedda Alm</h1>
+    <h2><em>Studentrådgivare</em></h2>
+    <img src="heddaPB.png" alt="Hedda Alm" class="profile-image">
+    <p class="contact-info">Kontakt: hedda.alm@xchange.se</p>
+</section>
+
+<!-- Skillbar-->
+<div id="skills-app">
+    <section class="skills-section">
+        <h3>Mina Färdigheter</h3>
+
+        <div class="skill" v-for="(skill, index) in skills" :key="index">
+            <p>{{ skill.name }}</p>
+            <div class="skill-bar">
+                <div class="skill-level" :style="{ width: skill.currentLevel + '%' }">{{ skill.displayedLevel }}%</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!-- Beskrivning -->
+<section class="mission-section">
+    <h3>Mitt uppdrag</h3>
+    <p class="mission-text">
+        Som studentrådgivare hjälper jag studenter att navigera genom utbildningsmöjligheter, oavsett om det handlar om att hitta rätt utbytesprogram, förbereda ansökningar, eller få stöd genom hela processen. Mitt mål är att matcha varje student med det program som bäst passar deras akademiska och personliga mål. Genom workshops, vägledning och mentorskap har jag haft förmånen att hjälpa studenter att ta avgörande steg mot deras framtida karriärer och livsmål. Jag ser det som min uppgift att guida dem genom en ofta överväldigande process och ge dem de verktyg de behöver för att lyckas.
+    </p>
+</section>
+
+<!-- Bildspel -->
+<div id="carousel-app">
+    <section class="carousel-section">
+        <carousel :autoplay="true" :autoplay-timeout="3000" :per-page="1" class="project-carousel">
+            <slide v-for="(image, index) in images" :key="index">
+                <img :src="image" alt="Projektbild" class="carousel-image">
+            </slide>
+        </carousel>
+    </section>
+</div>
+
+<!-- Heddas projekt -->
+<h1>Projektportfölj</h1>
+    <div id="project-container"></div>
+    <script src="hedda.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+         <p>info@xchange.se</p>
+    </footer>
+</body>
+</html>

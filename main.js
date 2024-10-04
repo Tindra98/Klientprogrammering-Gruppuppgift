@@ -72,10 +72,8 @@ function showError(input, message) {
    
     const errorText = document.createElement('small');
     errorText.classList.add('error-text');
-    errorText.style.color = 'red'; 
     errorText.innerText = message;
 
-    input.classList.add('is-invalid'); 
     input.parentElement.appendChild(errorText); 
 }
 

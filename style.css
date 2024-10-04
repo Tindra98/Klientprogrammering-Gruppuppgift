@@ -395,6 +395,11 @@ img {
 text-align: center;
 }
 
+.error-text {
+    color: red;
+    font-size: 0.9em; 
+}
+
 /* card */
 
 .card {

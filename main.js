@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   });
   
-// validering 
+// validering
 
 const nameInput = document.getElementById('name');
 const numberInput = document.getElementById('number');

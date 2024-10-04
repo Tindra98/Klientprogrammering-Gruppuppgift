@@ -7,9 +7,11 @@ const app = Vue.createApp({
     created() {
         axios.get('tindraNotes.json')
             .then((response) => {
-                this.projects = response.data.projects; // Assign the projects array
+                this.projects = response.data.projects; 
             })
     }
 });
 
 app.mount('#app');
+
+

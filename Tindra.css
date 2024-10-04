@@ -11,83 +11,67 @@
   
 }
 
- /*carousel*/
 
- .container-carousel {
-  display: flex; 
-  align-items: flex-start; 
-  width: 100%;
-  margin: 0 auto; 
-  margin-bottom: 40px;
-  gap:80px;
-  
-  
+
+ /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 75px;
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 
-.carousel {
-    width: 60%;
-    position: relative;
-    margin-top:50px;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-  }
-  
-  .carousel-item {
-    height: 300px;
-    background: rgb(255, 255, 255);
-    padding: 1em;
-    color: #ffffff;
-    display: none;
-    
-  }
+.content-wrapper {
+  display: flex;                   
+  justify-content: space-between;          
+  height: 100vh;  
+  margin-top: 60px;                 
+}
 
-  .carousel-item img {
-    height: 100%;
-    width:100%;
-  }
+.slideshow-container {
+  flex: 1;                         
+  margin-right: 20px;              
+}
 
+.about-me-text {
+  flex: 1;                        
+  padding: 20px; 
+                   
+}
 
-  
-  .carousel-item-selected {
-    display: block;
-  }
-  
-  .carousel-nav {
-    width: 100%;
-    padding: 30px 0;
-    position: absolute;
-    bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%); 
-    text-align: center; 
-  }
-  
-  .carousel-button {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    align-items: center;
-    
-  }
-  
-  .carousel-button-selected {
-    background: rgba(255, 255, 255, 0.5);
-  }
 
  /*projects*/
 
 .projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Smaller space between project cards */
-  justify-content: space-between; /* Distributes space evenly between projects */
+  gap: 10px; 
+  justify-content: space-between; 
   padding: 20px;
   background-color: #f9f9f9;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 /* Project card styling */
@@ -97,8 +81,8 @@
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 19%; /* Adjusted to fit 5 projects per row with smaller gap */
-  max-width: 275px; /* Optional, keeps cards from getting too large on wider screens */
+  width: 19%; 
+  max-width: 275px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -107,7 +91,7 @@
   box-shadow: 0 6px 12px  rgb(116, 181, 224);
 }
 
-/* Text styling for project title */
+
 .projects h2 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -115,14 +99,14 @@
   margin-bottom: 10px;
 }
 
-/* Text styling for project description */
+
 .projects p {
   font-size: 1rem;
   color: #666;
   margin-bottom: 10px;
 }
 
-/* Kund label styling */
+
 .kund-label {
   font-weight: bold;
   color: #333;
@@ -135,21 +119,15 @@
 }
 
 
-  /*texts*/
-
-  .text {
+  .about-me-text {
     margin-top: 55px;
     width: 70%;
     margin-right:5px;
   }
 
-    .text p {
+    .about-me-text p {
       margin-bottom: 10px;
     }
-    
-    
-  
-
   
     .top-text-tindra-xxl {
       position: absolute; 
@@ -197,39 +175,25 @@
   
     @media (max-width: 960px) {
       
-      .container-carousel {
-        display: block; 
-        width: 100%;
-        margin: 0 auto;
-        
-    }
-    
-    .container .text {
-        width: 100%;  
-        margin-top: 10px;
-        
-    }
-    
-    .carousel {
-        width: 100%;
-        position: relative;
+        .projects > div {
+          flex: 1 1 calc(33.333% - 10px); 
+        }
+
+        .content-wrapper {
+          flex-direction: column; 
+          height: auto;
       }
 
-      .text {
-        margin-left: 15px;
-        margin-right: 15px;
-        width:100%;
-        margin-top: 15px;
-        margin-bottom: 50px;
-        padding-bottom: 60px;
-        
+      .slideshow-container {
+        width: 100%;
       }
-      .text p {
-        margin-bottom: 10px;
+      
+      .about-me-text {
+        width: 100%;
+                         
       }
-        .projects > div {
-          flex: 1 1 calc(33.333% - 10px); /* Three cards per row on medium screens */
-        }
+      
+  
     
         }
 
@@ -238,6 +202,12 @@
             flex: 1 1 calc(50% - 10px); 
           
           }
+
+          .content-wrapper {
+            flex-direction: column; /* Stapla elementen vertikalt */
+            height: auto; /* Ta bort höjdbegränsning */
+        }
+    
         }
         
   
@@ -278,26 +248,6 @@
           color:  rgb(116, 181, 224);
       }
 
-        
-.container-carousel {
-    display: block;
-    justify-content: space-between; 
-    width: 100%;
-    margin: 0 auto;
-    
-}
-
-.container .text {
-    width: 100%; 
-    margin-left: 20px; 
-    margin-top: 10px;
-}
-
-.carousel {
-    width: 100%;
-    position: relative;
-  }
-
   .projects-content h3 {
     font-size: 5rem;
     font-weight: 600;
@@ -309,6 +259,12 @@
     flex: 1 1 100%; /* One card per row on mobile screens */
     max-width: 100%; /* Take full width on mobile */
   }
+
+  .content-wrapper {
+    flex-direction: column; /* Stapla elementen vertikalt */
+    height: auto; /* Ta bort höjdbegränsning */
+}
+
 
 
 }

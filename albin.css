@@ -1,128 +1,282 @@
-/* Slideshow container */
-.slideshow-container {
-
-    position: relative;
-    max-width: 1000px;
-    margin:auto;
-    overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: 40px;
-
+/* Hero sektion */
+.Hero {
+    background: url('rom2.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
 }
 
+.First {
+    position: relative;
+}
 
+.hero-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
-/*Slideshow images */
+.text-Albin-xl {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #e55d4a;
+}
+
+/*Hero sektion avslutas*/
+
+/*Mobile meny startar */
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hamburger-button {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobile-menu li {
+        margin: 10px 0;
+    }
+
+    .mobile-menu li a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+/*Mobile meny avslutas */
+
+/* Fotoalbum sektion */
+.Fotoalbum {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.Fotoalbum .heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.Fotoalbum .heading span {
+    color: #ff6f61;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 80%; 
+    margin: 20px auto;
+    overflow: hidden; 
+    border-radius: 15px; 
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Lätt skugga för lyft */
+    
+}
+
 .slide_image {
     width: 100%;
-    vertical-align: middle;
+    height: auto;
 }
 
-/*Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from{ opacity: 0.4; }
-    to{opacity: 1; }
-}
-
-/* Previous and next buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
     padding: 16px;
-    margin-top: -22px;
     color: white;
-    font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0,0,0,0.5);
-} 
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8); /*ger knapparna lite bakgrundsfärg
-}
-
-/* Dots(prickarna) */
+/* Style for the dots under the slideshow */
 .dots-container {
     text-align: center;
-    padding: 20px;
-    background: none; /* Färg på bakgrunden för prickarna */
+    margin-top: 15px;
 }
 
 .dot {
     cursor: pointer;
-    height: 15px; /*Höjd på prickarna*/
+    height: 15px;
     width: 15px;
     margin: 0 5px;
     background-color: #bbb;
-    border-radius: 50%; /*Gör prickarna runda*/
+    border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-    background-color: #717171; /*Färgen på den aktiva pricken*/
+    background-color: #717171;
 }
 
-/*Hide slides by default */ 
-.mySlides {
-    display:none; }
+/*Fotoalbum sektion avslutas*/
 
+
+/* Om mig sektion */
+.about {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
 }
 
-@media only screen and (max-widht: 768px) {
-    .prev, .next {
-        font-size: 12px;
-        padding: 10px;
-    }
-
-    .dot {
-        height: 10px;
-        width: 10px;
-    }
+.heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
 }
 
-.about .row{
+.heading span {
+    color: #ff6f61;
+}
+
+.about-container {
     display: flex;
     align-items: center;
-    background: var(--black);
-    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
 }
 
-.about .row .image{
-    flex:1 1 45rem;
+.about-image img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.about .row .image img{
-    width: 100%;
+.about-content {
+    max-width: 600px;
 }
 
-.about .row .content{
-    flex:  1 1 45rem;
-    padding: 2rem;
+.about-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.about .row .content h3{
-    font-size: 3rem;
-    color: #fff;
+.about-content p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
 }
 
-.about .row .content p{
-    font-size: 1.6rem;
-    color: #ccc;
-    padding: 1rem 0;
-    line-height: 1.8;
+.about-image img, .projects-box {
+    transition: transform 0.3s ease; 
 }
+
+.about-image img:hover, .projects-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsiv Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*Om mig sektion avslutas */
+
+/* Projekt sektion */
+.projects {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.projects-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.rubrik span {
+    color: #ff6f61;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projects-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.projects-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Rubrik "Mina Projekt" */
+.rubrik {
+    text-align: center;
+    margin: 20px 0;
+}
+/*Projekt sektion avslutas*/
+
+/* Footer */
+footer.contact-section {
+    text-align: left;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer.contact-section a {
+    color: white;
+}
+
+/*Footer avslutas*/

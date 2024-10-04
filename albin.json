@@ -1,0 +1,33 @@
+ [
+    {
+      "title": "Budgetoptimering för globala utbytesprogram",
+      "description": "Som administrativ ansvarig har jag alltid ett öga för att maximera resurserna. Ett av mina mest spännande projekt involverade en fullständig budgetöversyn för våra globala utbytesprogram. Genom noggrann analys och smart förhandling med våra internationella samarbetspartners lyckades vi sänka våra driftskostnader med 15%, utan att kompromissa på kvaliteten av våra tjänster. Denna besparing gjorde det möjligt för oss att utöka vårt stipendieprogram, vilket i sin tur gav fler studenter chansen att delta i utbytesprogrammen. Att se studenter från olika bakgrunder ta steget ut i världen tack vare dessa besparingar var en stor belöning för arbetet",
+      "customer": "Global Student Exchange",
+      "year": "2023"
+    },
+    {
+      "title": "Digitalisering av HR-processer",
+      "description": "En av mina största utmaningar var att förenkla och effektivisera de tidskrävande HR-processerna. Medan vi tidigare hanterade ansökningar och uppföljning manuellt, implementerade jag ett nytt digitalt HR-system som automatiserade hela processen, från studenternas första kontakt till antagningen och administrationen under deras tid som utbytesstudenter. Systemet minskade den administrativa bördan för teamet med 40% och gjorde ansökningsprocessen snabbare och enklare för studenterna. Det frigjorde också värdefull tid som vi istället kunde använda för att fokusera på att utveckla ännu bättre studentupplevelser och samarbeten.",
+      "customer": "Student HR Management",
+      "year": "2022"
+    },
+    {
+      "title": "Avtalsförhandling för globala partnerskap",
+      "description": "Ett av de mest givande projekten jag har arbetat med var att utöka vårt nätverk av internationella partnerskap. Jag ledde förhandlingarna med universitet i över 20 olika länder för att skapa långsiktiga avtal som gynnade både våra studenter och våra partners. Det innebar att säkerställa att varje avtal var noggrant balanserat – att våra studenter fick tillgång till högkvalitativa utbildningar och att vi kunde erbjuda attraktiva villkor för utbytesuniversiteten. Genom dessa avtal öppnade vi upp för hundratals nya platser i våra utbytesprogram, vilket gjorde det möjligt för fler studenter att få en unik internationell erfarenhet",
+      "customer": "International Universities",
+      "year": "2021"
+    },
+    {
+      "title": "Framtagning av en krishanteringsplan",
+      "description": "Att ha en solid plan för oförutsedda händelser är avgörande, särskilt i en global verksamhet som arbetar med internationella utbytesstudenter. Jag var ansvarig för att utveckla och implementera en omfattande krishanteringsplan som skulle säkerställa att vi kunde agera snabbt och effektivt om en kris skulle uppstå, vare sig det var en global pandemi, naturkatastrof eller annan oförutsedd händelse. Planen innefattade allt från säkerhetsrutiner och evakueringsplaner till att säkra nödvändiga resurser för att stötta studenterna både fysiskt och mentalt. Tack vare denna plan kunde vi snabbt agera under pandemin och säkerställa att våra studenter fick det stöd de behövde oavsett var i världen de befann sig",
+      "customer": "Global Crisis Team",
+      "year": "2020"
+    },
+    {
+      "title": "Utvärdering och förbättring av studenternas upplevelse",
+      "description": "Studenternas upplevelse har alltid varit i fokus för mitt arbete, och därför tog jag initiativet till att införa ett nytt feedbacksystem som kontinuerligt samlade in synpunkter från tidigare utbytesstudenter. Genom regelbundna enkäter och intervjuer kunde vi identifiera styrkor och förbättringsområden i våra program. Baserat på den insamlade datan gjorde vi en rad förändringar, inklusive bättre förberedande material före utbytet, mer lokalt stöd under utbytet och förbättrad uppföljning efter hemkomsten. Dessa åtgärder resulterade i en 25% ökning av studentnöjdheten, vilket bekräftade att våra förbättringar verkligen gjorde skillnad i studenternas upplevelser",
+      "customer": "Exchange Program Feedback",
+      "year": "2019"
+    }
+  ]
+  

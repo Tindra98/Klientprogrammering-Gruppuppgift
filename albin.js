@@ -21,17 +21,17 @@ function showSlides(n) {
     if(n > slides.length) {slideIndex = 1}
     if(n < 1) {slideIndex= slides.length}
 
-    //dölj alla bilder
+   
     for (i = 0; i <slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    //återställer alla dots
+    
     for (i = 0; i <dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     
-    //Visar den aktuella bilden samt aktiva dot
+    
     slides[slideIndex -1].style.display = "block";
     dots[slideIndex -1].className += " active";
 }
@@ -64,13 +64,26 @@ for(i =0; i < dots.length; i++){
 }
 dots[autoSlideIndex -1].className+= " active";
 
-setTimeout(autoShowSlides, 8000); //Byter bilder var 5 sekund
+setTimeout(autoShowSlides, 8000); //Byter bilder var 8 sekund
 }
 
 // Återställ automatisk slideshow-timer
 function resetAutoShow() {
-    clearTimeout(autoShowInterval); // Stoppa den aktuella timern
-    autoSlideIndex = slideIndex - 1; // Ställ in autoSlideIndex till aktuell bild
-    autoShowSlides(); // Starta om slideshow
+    clearTimeout(autoShowInterval); 
+    autoSlideIndex = slideIndex - 1; 
+    autoShowSlides(); 
 }
+
+//Mobile meny
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+  
+    hamburgerButton.addEventListener('click', () =>
+      mobileMenu.classList.toggle('active')
+    );
+  });
+
+
+
 

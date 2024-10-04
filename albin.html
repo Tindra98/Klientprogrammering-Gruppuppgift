@@ -1,131 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X-Change Albin Sadiku</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="albin.css"/>
-        <script src="albin.js" defer></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="albin.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="albinvue.js"></script>
+    <script src="albin.js" defer></script>
 </head>
 
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="x-changelogo.png">
-                </a>
-            </div>
-
-            <div class="main-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Hem</a>
-                    </li>
-                    <li>
-                        <a href="#">Om oss</a>
-                    </li>
-                    <li>
-                        <a class="btn" href="#">
-                            <i class="fas fa-user"></i> Logga in
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="x-changelogo.png" alt="picture">
+            </a>
         </div>
 
- <!--Hamburger Button-->
+        <div class="main-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Hem</a>
+                </li>
+                <li>
+                    <a href="#">Om oss</a>
+                </li>
+                <li>
+                    <a class="btn" href="#">
+                        <i class="fas fa-user"></i> Logga in
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
- <button class="hamburger-button">
-    <div class="hamburger-line"></div>
-    <div class="hamburger-line"></div>
-    <div class="hamburger-line"></div>
-  </button>
+<!--Hamburger Button-->
+<button class="hamburger-button">
+<i class="fa fa-bars"></i>
+</button>
 
-  <div class="mobile-menu">
-      <ul>
-          <li>
-              <a href="index.html">Hem</a>
-          </li>
-          <li>
-              <a href="#">Om oss</a>
-          </li>
-          <li>
-              <a class="btn" href="#">
-                  <i class="fas fa-user"></i> Logga in
-              </a>
-          </li>
-      </ul>
-  </div>
+
+<div class="mobile-menu">
+    <ul>
+        <li>
+            <a href="index.html">Hem</a>
+        </li>
+        <li>
+            <a href="#">Om oss</a>
+        </li>
+        <li>
+            <a class="btn" href="#">
+                <i class="fas fa-user"></i> Logga in
+            </a>
+        </li>
+    </ul>
+</div>
 </nav>
 
-
-
+    <!-- Hero -->
     <section class="Hero">
         <div class="container">
             <div class="First">
-                <h1 class="hero-heading text-Albin-xxl text-center">
-                    Albin Sadiku
-                </h1>
+                <h1 class="hero-heading text-Albin-xxl text-center">Albin Sadiku</h1>
                 <p class="text-Albin-xl text-center">Administrativ Ansvarig</p>
-                    </div>
+                <a href="#about" class="cta-button">Läs mer om mig</a>
             </div>
         </div>
     </section>
 
-    <section class="Hero" style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;">
-            <div class="container">
-                <div class="">
-                    <h2 class="hero-heading text-Albin-l text-">
-                        Jag heter Albin Sadiku och är 25 år gammal. Jag är född i Kosovo men har vuxit upp och bott nästan hela mitt liv i Örebro, där jag studerade systemvetenskap vid Örebro universitet. 
-                        Utöver min examen har jag även kompletterat med utbildningar inom affärsadministration och projektledning, vilket ger mig en stark grund för att hantera företagets interna processer på ett strategiskt och effektivt sätt.
-                        Jag är en person som ständigt strävar efter att utvecklas och förbättra mina färdigheter. På fritiden älskar jag att spela fotboll och hålla mig aktiv, och min stora passion är att resa och upptäcka nya kulturer och platser.
-                        Som administrativ ansvarig har jag ett brett ansvar för att hantera interna uppgifter som budgetering, avtal, HR-frågor och den dagliga driften av företaget. 
-                        Mitt arbete innebär att säkerställa att alla processer fungerar smidigt, vilket skapar en stabil grund för företagets framgång. 
-                        Jag strävar efter att skapa effektiva rutiner och samarbeten som gör att organisationen kan utvecklas och nå sina mål. Genom mitt engagemang och min erfarenhet ser jag till att företagets verksamhet löper på ett sätt som främjar både tillväxt och långsiktig hållbarhet                
-                    </h2>
-                </div>
+    <!-- Om mig -->
+    <section class="about" id="about"> 
+        <h2 class="heading"><span>Om</span> mig</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="London.jpg" alt="Albin Sadiku">
             </div>
+            <div class="about-content">
+                <h3>Vem är jag?</h3>
+                <p>Jag heter Albin Sadiku och är 23 år gammal. Jag har vuxit upp och bott nästan hela mitt liv i Örebro, där jag studerade systemvetenskap vid Örebro universitet. Utöver min examen har jag även kompletterat med utbildningar inom affärsadministration och projektledning, vilket ger mig en stark grund för att hantera företagets interna processer på ett strategiskt och effektivt sätt. Jag är en person som ständigt strävar efter att utvecklas och förbättra mina färdigheter. På fritiden älskar jag att spela fotboll och hålla mig aktiv, och min stora passion är att resa och upptäcka nya kulturer och platser. Som administrativ ansvarig har jag ett brett ansvar för att hantera interna uppgifter som budgetering, avtal, HR-frågor och den dagliga driften av företaget. Mitt arbete innebär att säkerställa att alla processer fungerar smidigt, vilket skapar en stabil grund för företagets framgång. Jag strävar efter att skapa effektiva rutiner och samarbeten som gör att organisationen kan utvecklas och nå sina mål. Genom mitt engagemang och min erfarenhet ser jag till att företagets verksamhet löper på ett sätt som främjar både tillväxt och långsiktig hållbarhet.</p>
+            </div>
+        </div>
     </section>
 
-    <h2>Mitt fotoalbum</h2>
-    <section class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="Tindrabildspelbild1.jpeg" alt="Bild 1" class="slide_image">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="Tindrasbildspelbild2.jpeg" alt="Bild 2" class="slide_image">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="Tindrasbildspelbild3.jpeg" alt="Bild 3" class="slide_image">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="Tindrasbildspelbild4.jpeg" alt="Bild 4" class="slide_image">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="universityLocations.png" alt="Bild 5" class="slide_image">
-        </div>
-
-        <!--Navigerings knappar-->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--Förgående bild-->
-        <a class="next" onclick="plusSlides(1)">&#10095;</a> <!--Nästa bild-->
+    <!-- Fotoalbum -->
+    <section class="Fotoalbum" id="Fotoalbum"> 
+        <h2 class="heading"><span>Mitt</span> Fotoalbum</h2>
     </section>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="bridge.jpg" alt="Bild 1" class="slide_image">
+        </div>
+        <div class="mySlides fade">
+            <img src="kosovo.jpg" alt="Bild 2" class="slide_image">
+        </div>
+        <div class="mySlides fade">
+            <img src="italien.jpg" alt="Bild 3" class="slide_image">
+        </div>
+        <div class="mySlides fade">
+            <img src="berlin.jpg" alt="Bild 4" class="slide_image">
+        </div>
+        <div class="mySlides fade">
+            <img src="durres.jpg" alt="Bild 5" class="slide_image">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
 
-    <!--Nuvarande bild som visas-->
     <div class="dots-container">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
@@ -134,41 +121,31 @@
         <span class="dot" onclick="currentSlide(5)"></span>
     </div>
 
-    <!--Om mig info-->
- <section class="about" id="about">
-
-    <h1 class="heading"><span>about</span> us </h1>
-
-    <div class="row">
-        <img src="rooftop.jpg" alt="bild 7">
-    </div>
-
-    <div class="content">
-        <h3>Vem är jag?</h3>
-        <p>Jag heter Albin Sadiku och är 25 år gammal. Jag är född i Kosovo men har vuxit upp och bott nästan hela mitt liv i Örebro, där jag studerade systemvetenskap vid Örebro universitet. 
-            Utöver min examen har jag även kompletterat med utbildningar inom affärsadministration och projektledning, vilket ger mig en stark grund för att hantera företagets interna processer på ett strategiskt och effektivt sätt.
-            Jag är en person som ständigt strävar efter att utvecklas och förbättra mina färdigheter. På fritiden älskar jag att spela fotboll och hålla mig aktiv, och min stora passion är att resa och upptäcka nya kulturer och platser.
-            Som administrativ ansvarig har jag ett brett ansvar för att hantera interna uppgifter som budgetering, avtal, HR-frågor och den dagliga driften av företaget. 
-            Mitt arbete innebär att säkerställa att alla processer fungerar smidigt, vilket skapar en stabil grund för företagets framgång. 
-            Jag strävar efter att skapa effektiva rutiner och samarbeten som gör att organisationen kan utvecklas och nå sina mål. Genom mitt engagemang och min erfarenhet ser jag till att företagets verksamhet löper på ett sätt som främjar både tillväxt och långsiktig hållbarhet                </p>
-    </div>
- </section>
-
-    <!--Om mig avslutas-->
-
-    <!--Mina projekt-->
-<section class="projekt" id="projekt">
-
-    <h1 class="heading"> Mina <span>arbeten</span></h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <p>"Som administrativ ansvarig har jag alltid ett öga för att maximera resurserna. Ett av mina mest spännande projekt involverade en fullständig budgetöversyn för våra globala utbytesprogram. Genom noggrann analys och smart förhandling med våra internationella samarbetspartners lyckades vi sänka våra driftskostnader med 15%, utan att kompromissa på kvaliteten av våra tjänster. Denna besparing gjorde det möjligt för oss att utöka vårt stipendieprogram, vilket i sin tur gav fler studenter chansen att delta i utbytesprogrammen. Att se studenter från olika bakgrunder ta steget ut i världen tack vare dessa besparingar var en stor belöning för arbetet."</p>
+    <!-- Mina projekt -->
+    
+    <h2 class="rubrik"><span>Mina</span> Projekt</h2>
+    
+    <section class="mina-projekt" id="Mina_projekt"> 
+        <div id="app" class="projects">
+            <div class="projects-grid">
+                <div v-for="project in projects" class="projects-box"> <!--Visar fel på validering (Ska vara okej enligt lärarna)-->
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.description }}</p>
+                    <h4>{{ project.customer }}</h4>
+                    <h4>{{ project.year }}</h4>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-    <!--Mina projekt avslutas-->
+    </section>
 
+    <!-- Footer -->
+    <footer class="contact-section">
+        <p>Fakultetsgatan 1, 701 82 Örebro</p>
+        <p><a href="mailto:albin.sadiku@exchange.com">albin.sadiku@exchange.com</a></p>
+        <p>019-30 30 99</p>
+    </footer>
+
+    <script src="albinvue.js"></script>
+    <script src="albin.js"></script>
 </body>
 </html>
